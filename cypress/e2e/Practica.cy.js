@@ -9,7 +9,6 @@ it('C165_Eliminar varias opciones ya existentes', () => {
     cy.contains ('Tarea 1').parent().find('.destroy').invoke('show').click()
     cy.contains ('Tarea 2').parent().find('.destroy').invoke('show').click()
     cy.contains ('Tarea 3').parent().find('.destroy').invoke('show').click()
-
     })
     
 it('C169_Editar una tarea y ponerle el mismo nombre que una tarea ya existente', () => {
@@ -32,9 +31,6 @@ it.only('C167_Al filtrar las tareas activas cuando todas las tareas están compl
 
     cy.get('[data-testid="toggle-all"]').click();
     cy.get(':nth-child(2) > a').click();
-
-        
-        
     })
 
 })
